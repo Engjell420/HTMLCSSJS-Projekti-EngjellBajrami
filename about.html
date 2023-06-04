@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="images/leaf-icon.png">
+	<script src="https://kit.fontawesome.com/c728ec59cd.js" crossorigin="anonymous"></script>
+	<title>Viridis</title>
+</head>
+<body>
+	<nav class="topnav" id="myTopnav">
+		<a href="index.html">Home</a>
+		<a class="active"href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="responsiveTopnav()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</nav>
+	<div class="spacer"></div>
+	<header>
+		<img src="images/about-header.jpg" alt="Rocky Waterfall" width="100%" height="auto">
+		<img class="profile" src="images/profile.png" alt="Profile" height="300px">
+		<div class="profile-description"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum accusamus adipisci veritatis quidem, odio voluptas ex labore quo pariatur deleniti asperiores non obcaecati deserunt iusto. Pariatur suscipit sapiente voluptatibus repudiandae!</p></div>
+	</header>
+	<h1 class="our-team">
+		Our team
+	</h1>
+	<section class="about-section">
+		<div class="about-member">
+			<img src="images/profile.png" style="filter: blur(0.005rem);" width="100%" height="auto" alt="Member">
+			<h3>ENGJËLL BAJRAMI</h3>
+			<h5>CEO / Developer</h5>
+		</div>
+		<div class="about-member">
+			<img src="images/profile.png" style="filter: blur(0.005rem);" width="100%" height="auto" alt="Member">
+			<h3>HALIL BYTYQI</h3>
+			<h5>Lead Designer</h5>
+		</div>
+		<div class="about-member">
+			<img src="images/profile1.jpg" style="filter: blur(0.005rem);" width="100%" height="auto" alt="Member">
+			<h3>HASHIM THAÇI</h3>
+			<h5>Creative Director</h5>
+		</div>
+		<div class="about-member">
+			<img src="images/profile1.jpg" style="filter: blur(0.005rem);" width="100%" height="auto" alt="Member">
+			<h3>SNOOP DOGG</h3>
+			<h5>Blunt Donor</h5>
+		</div>
+	</section>
+	<section class="about-what-we-do">
+		<h1>What we do</h1>
+		<p>We do lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis ratione debitis maxime cupiditate vel ad eaque quas vitae quos, voluptas doloremque odit cum nam accusantium nulla esse officia. Cumque, adipisci.</p>
+		<h1>What you can do!</h1>
+		<p>You can help us stop <em>global warming/climate change</em> with a small donation such as 1&euro; or much more!</p>
+		<div class="donate-container">
+			<div class="donation-amount">
+				<label for="amount">Donation amount:</label>
+				<input type="number" name="amount" id="amount" required>
+				<button onclick="donation()">Submit</button>
+			</div>
+			<div class="thanks" id="Thanks">
+				<i class="fa-solid fa-3x fa-hand-holding-dollar"></i>
+				<h4>Thank you!</h4>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>Contact me: <a href="tel:+383 43 842 507">+383 43 842 507</a></p>
+		<nav class="social-links">
+			<a href="mailto:engjellbajrami1234@gmail.com" class="fa fa-google" socialLink></a>
+			<a href="https://www.facebook.com/Engjell.Bajrami4/" class="fa fa-facebook" target="blank" socialLink></a>
+			<a href="https://www.instagram.com/b_engjelli/" class="fa fa-instagram" target="blank" socialLink></a>
+			<a href="https://www.youtube.com/channel/UCDqT9_Hng7XHjqJ27oLbZZA" class="fa fa-youtube" target="blank" socialLink></a>
+		</nav>
+	</footer>
+
+	<script type="text/javascript">
+	function responsiveTopnav() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+    		x.className = "topnav";
+		}
+	}
+	function donation() {
+		var x = document.getElementById("Thanks");
+		var y = document.getElementById("amount");
+		if (y.value.length != "0" & y.value >= "0" & x.className === "thanks") {
+				x.className += " shown";
+		}
+	}
+	</script>
+</body>
+</html>
